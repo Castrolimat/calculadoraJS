@@ -1,7 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap');
 body{
 background-color: #FDFFFC;
-font-family: 'Amatic SC', cursive;
 }
 
 table{
@@ -28,6 +27,7 @@ th input{
     text-align: center;
     color: #FDFFFC;
     border-radius: 0.2em;
+    font-family: 'Kdam Thmor Pro', sans-serif;
 }
 
 td input{
@@ -37,4 +37,5 @@ td input{
     border: none;
     font-size: larger;
     background-color: #FCE9C5;
+    font-family: 'Kdam Thmor Pro', sans-serif;
 }
