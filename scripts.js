@@ -2,41 +2,41 @@ var num1;
 var num2;
 var op;
 
-function pegarNumero(value) {
-    document.getElementById("tela").value += value;
+function getNumber(value) {
+    document.getElementById("screen").value += value;
 }
 
-function limparTela() {
-    document.getElementById("tela").value = "";
+function cleanScreen() {
+    document.getElementById("screen").value = "";
 }
 
-function zerar() {
-    limparTela();
+function reset() {
+    cleanScreen();
     num1 = 0;
     num2 = 0;
 }
 
-function selecionarOp(value) {
+function getOp(value) {
     op = value;
-    num1 = Number(document.getElementById("tela").value);
-    limparTela();
+    num1 = Number(document.getElementById("screen").value);
+    cleanScreen();
 }
 
-function calcular() {
-    num2 = Number(document.getElementById("tela").value);
+function getResult() {
+    num2 = Number(document.getElementById("screen").value);
     switch (op) {
         case "+":
-            document.getElementById("tela").value = num1 + num2;
+            document.getElementById("screen").value = num1 + num2;
             break;
 
         case "-":
-            document.getElementById("tela").value = num1 - num2;
+            document.getElementById("screen").value = num1 - num2;
             break;
         case "*":
-            document.getElementById("tela").value = num1 * num2;
+            document.getElementById("screen").value = num1 * num2;
             break;
         case "/":
-            document.getElementById("tela").value = num1 / num2;
+            document.getElementById("screen").value = num1 / num2;
             break;
     }
 }

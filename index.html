@@ -7,37 +7,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <script src="/scripts.js"></script>
-    <title>Calculadora</title>
+    <title>Calculator</title>
 </head>
 
 <body>
     <table>
         <tr>
-            <th colspan="4"><input type="text" id="tela" disabled></th>
+            <th colspan="4"><input type="text" id="screen" disabled></th>
         </tr>
         <tr>
-            <td><input class="botao-num" type="button" value="7" onclick="pegarNumero(value)"></td>
-            <td><input class="botao-num" type="button" value="8" onclick="pegarNumero(value)"></td>
-            <td><input class="botao-num" type="button" value="9" onclick="pegarNumero(value)"></td>
-            <td><input class="botao-op" type="button" value="/" onclick="selecionarOp(value)" )></td>
+            <td><input class="button-num" type="button" value="7" onclick="getNumber(value)"></td>
+            <td><input class="button-num" type="button" value="8" onclick="getNumber(value)"></td>
+            <td><input class="button-num" type="button" value="9" onclick="getNumber(value)"></td>
+            <td><input class="button-op" type="button" value="/" onclick="getOp(value)" )></td>
         </tr>
         <tr>
-            <td><input class="botao-num" type="button" value="4" onclick="pegarNumero(value)"></td>
-            <td><input class="botao-num" type="button" value="5" onclick="pegarNumero(value)"></td>
-            <td><input class="botao-num" type="button" value="6" onclick="pegarNumero(value)"></td>
-            <td><input class="botao-op" type="button" value="*" onclick="selecionarOp(value)"></td>
+            <td><input class="button-num" type="button" value="4" onclick="getNumber(value)"></td>
+            <td><input class="button-num" type="button" value="5" onclick="getNumber(value)"></td>
+            <td><input class="button-num" type="button" value="6" onclick="getNumber(value)"></td>
+            <td><input class="button-op" type="button" value="*" onclick="getOp(value)"></td>
         </tr>
         <tr>
-            <td><input class="botao-num" type="button" value="3" onclick="pegarNumero(value)"></td>
-            <td><input class="botao-num" type="button" value="2" onclick="pegarNumero(value)"></td>
-            <td><input class="botao-num" type="button" value="1" onclick="pegarNumero(value)"></td>
-            <td><input class="botao-op" type="button" value="-" onclick="selecionarOp(value)"></td>
+            <td><input class="button-num" type="button" value="3" onclick="getNumber(value)"></td>
+            <td><input class="button-num" type="button" value="2" onclick="getNumber(value)"></td>
+            <td><input class="button-num" type="button" value="1" onclick="getNumber(value)"></td>
+            <td><input class="button-op" type="button" value="-" onclick="getOp(value)"></td>
         </tr>
         <tr>
-            <td><input class="botao-op" type="button" value="C" onclick="limparTela()"></td>
-            <td><input class="botao-num" type="button" value="0" onclick="pegarNumero(value)"></td>
-            <td><input class="botao-op" type="button" value="=" onclick="calcular()"></td>
-            <td><input class="botao-op" type="button" value="+" onclick="selecionarOp(value)"></td>
+            <td><input class="button-op" type="button" value="C" onclick="cleanScreen()"></td>
+            <td><input class="button-num" type="button" value="0" onclick="getNumber(value)"></td>
+            <td><input class="button-op" type="button" value="=" onclick="getResult()"></td>
+            <td><input class="button-op" type="button" value="+" onclick="getOp(value)"></td>
         </tr>
     </table>
 </body>
